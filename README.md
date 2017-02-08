@@ -1,6 +1,9 @@
 # discord-twitter-bot
 A simple Python-based chat-configurable Discord bot which will live echo a Twitter user's tweets.
 
+##
+Fork by Firzenizer. Retweets and replies are excluded in this fork.
+
 ## Prerequisites
 
 The following dependencies are required:

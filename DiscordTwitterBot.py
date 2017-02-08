@@ -180,7 +180,7 @@ prefetched tweets."""
         # Fill up the last 'store' tweets if get_last is set
         if get_last:
             result = self.twitter.get("statuses/user_timeline",
-                params={'user_id':uid, 'count':str(self.store)})
+                params={'user_id':uid, 'exclude_replies':True, 'include_rts':False, 'count':str(self.store)})
             # Results are returned in reverse-chronological order
             result.reverse()
             self._lastn.extend(result)
